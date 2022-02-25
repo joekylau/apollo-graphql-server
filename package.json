@@ -1,0 +1,19 @@
+{
+  "name": "apollo-graphql-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joekylau/apollo-graphql-server.git"
+  },
+  "author": "Joe Lau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joekylau/apollo-graphql-server/issues"
+  },
+  "homepage": "https://github.com/joekylau/apollo-graphql-server#readme"
+}
