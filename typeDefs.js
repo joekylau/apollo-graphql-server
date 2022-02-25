@@ -9,6 +9,7 @@ const typeDefs = gql`
 
   type Query {
     hello: String
+    authors: [Author]
   }
 
   input AuthorInput {
