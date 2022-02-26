@@ -3,7 +3,7 @@ const { Schema } = mongoose;
 
 const bookSchema = Schema({
   title: String,
-  description: String,
+  price: Number,
   author: { type: Schema.Types.ObjectId, ref: 'Author' }
 });
 
