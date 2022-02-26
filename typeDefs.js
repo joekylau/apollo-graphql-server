@@ -18,6 +18,7 @@ const typeDefs = gql`
   type Query {
     hello: String
     authors: [Author]
+    books: [Book]
   }
 
   input AuthorInput {

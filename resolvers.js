@@ -8,6 +8,9 @@ const resolvers = {
     },
     authors: async () => {
       return await Author.find();
+    },
+    books: async () => {
+      return await Book.find();
     }
   },
   Mutation: {
