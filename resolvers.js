@@ -1,5 +1,4 @@
-const Author = require('./models/Author.model');
-const Book = require('./models/Book.model');
+const { Author, Book } = require('./models');
 
 const resolvers = {
   Query: {
