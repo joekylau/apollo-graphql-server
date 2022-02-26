@@ -14,6 +14,7 @@ const resolvers = {
   },
   Mutation: {
     addAuthor: async (parent, args, context, info) => {
+      // Create author
       const author = new Author(args.author);
       await author.save();
 
@@ -31,6 +32,11 @@ const resolvers = {
       await author.save();
 
       return book;
+    },
+    deleteAuthor: async (parent, args, context, info) => {
+      // Delete author
+      await Author.findByIdAndDelete(args.id);
+      return args.id;
     }
   },
   Author: {
