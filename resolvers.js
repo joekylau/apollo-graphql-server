@@ -37,6 +37,11 @@ const resolvers = {
       // Delete author
       await Author.findByIdAndDelete(args.id);
       return args.id;
+    },
+    deleteBook: async (parent, args, context, info) => {
+      // Delete book
+      await Book.findByIdAndDelete(args.id);
+      return args.id;
     }
   },
   Author: {
