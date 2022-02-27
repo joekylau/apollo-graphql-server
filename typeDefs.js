@@ -38,6 +38,7 @@ const typeDefs = gql`
     deleteAuthor(id: ID): ID
     deleteBook(id: ID): ID
     updateAuthor(id: ID, author: AuthorInput): Author
+    updateBook(id: ID, book: BookInput): Book
   }
 `;
 

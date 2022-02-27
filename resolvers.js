@@ -48,6 +48,17 @@ const resolvers = {
       await Author.findByIdAndUpdate(args.id, args.author);
       const author = await Author.findById(args.id);
       return author;
+    },
+    updateBook: async (parent, args, context, info) => {
+      // Update book
+      const updates = {
+        ...args.book,
+        author: args.book.authorId
+      };
+
+      await Book.findByIdAndUpdate(args.id, updates);
+      const book = await Book.findById(args.id);
+      return book;
     }
   },
   Author: {
