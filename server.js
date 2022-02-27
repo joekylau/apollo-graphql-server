@@ -19,7 +19,7 @@ async function startApolloServer(typeDefs, resolvers) {
   server.applyMiddleware({ app });
 
   // connect to mongoDB
-  await mongoose.connect('mongodb+srv://joelau:8pqGMxKP6v7BZeeg@cluster0.trgl2.mongodb.net/StoreDB?retryWrites=true&w=majority', {
+  await mongoose.connect('mongodb+srv://joelau:8pqGMxKP6v7BZeeg@cluster0.trgl2.mongodb.net/storedb?retryWrites=true&w=majority', {
     useUnifiedTopology: true,
     useNewUrlParser: true
   });
