@@ -11,6 +11,9 @@ const resolvers = {
     authors: async () => {
       return await Author.find();
     },
+    book: async (parent, args, context, info) => {
+      return await Book.findById(args.id);
+    },
     books: async () => {
       return await Book.find();
     }
