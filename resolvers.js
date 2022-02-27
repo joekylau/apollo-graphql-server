@@ -5,6 +5,9 @@ const resolvers = {
     hello: () => {
       return 'Hello World'
     },
+    author: async (parent, args, context, info) => {
+      return await Author.findById(args.id);
+    },
     authors: async () => {
       return await Author.find();
     },
